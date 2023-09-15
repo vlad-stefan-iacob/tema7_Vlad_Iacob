@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+</head>
+
+<body>
+    <h1>Minesweeper Game</h1>
+
+    <p><b>Set the game board:</b></p>
+    <label for="bombProb">Bomb Probability:</label>
+    <input type="number" id="bombProb" placeholder="Bomb Probability">
+
+    <label for="maxProb">Max Probability:</label>
+    <input type="number" id="maxProb" placeholder="Max Probability">
+
+    <br><br>
+
+    <label for="difficulty">Select Difficulty:</label>
+    <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="expert">Expert</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="changeDifficulty()">Set the board</button>
+
+    <br><br>
+
+    <hr>
+    <p><b>Now you can play:</b></p>
+    <label for="coordX">Enter X Coordinate:</label>
+    <input type="number" id="coordX" placeholder="X">
+
+    <label for="coordY">Enter Y Coordinate:</label>
+    <input type="number" id="coordY" placeholder="Y">
+
+    <button onclick="revealCell()">Reveal Cell</button>
+
+    <br><br>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
